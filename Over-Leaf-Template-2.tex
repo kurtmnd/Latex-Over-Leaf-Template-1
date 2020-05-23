@@ -1,0 +1,131 @@
+% American Physical Society Format
+% Based on RevTeX 4.2 Template and Sample 
+% Produced with OverLeaf in May 2020
+
+\documentclass[%
+ reprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+%preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-2}
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+%\usepackage{hyperref}% add hypertext capabilities
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
+\usepackage{float}
+
+\begin{document}
+
+\preprint{APS/123-QED}
+
+\title{Efecto Zeeman}% Force line breaks with \\
+%\thanks{A footnote to the article title}%
+
+\author{Niels Saavedra}%
+\affiliation{%
+ Universidad Mayor de San Simón
+}%
+
+\makeatletter
+\def\Dated@name{} % introduce pre-fix
+\makeatother
+
+\date{Mayo 2020}
+
+\begin{abstract}
+ Se presenta un informe sobre el efecto Zeeman como cumplimiento de las actividades realizadas en laboratorio de Taller Avanzado II, asignatura que forma parte del plan de estudios de Licenciatura en Física en la Universidad Mayor de San Simón.
+\begin{description}
+\item[Palabras clave] laboratorio — líneas espectrales — polarización — efecto Zeeman
+\end{description}
+\end{abstract}
+
+%\keywords{Suggested keywords}%Use showkeys class option if keyword
+                              %display desired
+\maketitle
+
+%\tableofcontents
+
+\section{\label{sec:level1}Introducción}
+
+Aquí se hablará del efecto Zeeman... bla bla bla ... las imágenes se referencian así: ver la Fig.~\ref{fig:ez01}..
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\columnwidth]{img/ez01.jpg}
+\caption{\label{fig:ez01} Imagen del efecto Zeeman.}
+\end{figure}
+
+Las ecuaciones se escribirán así: ... considerando la ecuación (\ref{eq:ez01}) tenemos lo siguiente:
+
+\begin{equation}
+\label{eq:ez01}
+x = \frac{1}{2}
+\end{equation}
+
+Luego añadimos otra ecuación:
+
+\begin{equation}
+\label{eq:ez02}
+\epsilon = \sqrt{\xi}
+\end{equation}
+
+\subsection{Subtítulo}
+
+This file may be \cite{ballagh2000a} formatted in either the or style. Format mimics final journal output. Either format may be used for submission purposes. This file may be formatted in either the or style. Format mimics final journal output. Either format may be used for submission purposes.
+
+\subsubsection{Subsección}
+The widetext environment will make the text the width of the
+full page, as on page. (Note the use command to refer to the page number.) 
+
+\paragraph{Párrafo 1}
+The width-changing commands \cite{witten2001} only take effect in two-column formatting. There is no effect if text is in a single column.
+
+\paragraph{Párrafo 2}
+When a reference is merged, some of its fields may be elided: for example, when the author matches that of the previous reference, it is omitted. 
+
+\section{\label{sec:level1}Cuerpo}
+
+This sample document demonstrates proper use of in mansucripts prepared for submission to APS journals. Further information can be found in the documentation included in the distribution or available.
+
+\subsection{Subtítulo 1}
+
+This file may be formatted in either the or style. Format mimics final journal output. Either format may be used for submission purposes.
+
+\subsubsection{Subsección 1}
+The widetext environment will make the text the width of the
+full page, as on page. (Note the use command to refer to the page number.) 
+
+\section{\label{sec:level1}Conclusiones}
+
+This sample document demonstrates proper \cite{ZS71} use of in mansucripts prepared for submission to APS journals. Further information can be found in the documentation included in the distribution or available.
+
+\bibliography{aps-zeeman}% Produces the bibliography via BibTeX.
+
+\end{document}
